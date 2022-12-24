@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Teko';
+    
+}
+
+.container{
+    background-color: yellow;
+    height: 100vh;
+}
+
+.member{
+    display: flex;
+    position: relative;
+}
+
+.head{
+    font-size: 8vh;
+    text-align: center;
+}
+
+.member .praj{
+    height: 85vh;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member .tsok{
+    height: 85vh;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member .krish{
+    height: 85vh;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member .praj img{
+    height: 330px;
+    width: 300px; 
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.member .tsok img{
+    height: 330px;
+    width: 300px;
+    padding: 20px; 
+    border-radius: 50px;
+}
+
+.member .krish img{
+    height: 330px;
+    width: 300px; 
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.member h1{
+    font-size: 5vh;
+}
+
+.member p{
+    font-size: 3vh;
+}
