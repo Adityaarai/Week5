@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Unbounded';
+}
+
+.container{
+    display: flex;
+    position: fixed;
+    background: linear-gradient(#c31432,#240b36);
+    height: 100vh;
+    width: 100vw;
+}
+
+.container .sidepic{
+    height: 100vh;
+    width: 45%;
+}
+
+.container .sidepic img{
+    height: 100%;
+    width: 90%;
+}
+
+.container .sponsor{
+    height: 100vh;
+    width: 55%;
+}
+
+.container .sponsor .main{
+    font-size: 8vh;
+    padding-top: 60px;
+    color: azure;
+}
+
+.container .sponsor .s{
+    padding-top: 40px;
+    font-size: 4vh;
+    color: gray;
+}
