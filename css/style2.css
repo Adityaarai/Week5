@@ -13,6 +13,7 @@
 .member{
     display: flex;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .head{
@@ -71,4 +72,12 @@
 
 .member p{
     font-size: 3vh;
+}
+
+@media screen and (max-width: 768px){
+    .container{height: 100%; width: 100%;}
+    .container .member{flex-direction: column;}
+    .container .member .praj{width: 100vw; height:auto;}
+    .container .member .krish{width: 100vw; height:auto}
+    .container .member .tsok{width: 100vw; height:auto}
 }
