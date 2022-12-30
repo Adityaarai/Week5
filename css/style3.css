@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Unbounded';
+    box-sizing: border-box;
 }
 
 .container{
@@ -10,7 +11,7 @@
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(#7f7fd5, #86a8e7, #91eae4);
+    background: linear-gradient(to top, #0f2027,#203a43,#2c5364);
 }
 
 .container .top{
@@ -26,6 +27,7 @@
     padding-top: 50px;
     padding-left: 30px;
     font-size: 4vh;
+    color: azure;
 }
 
 .container .top .right{
@@ -33,6 +35,7 @@
     width: 60%;
     padding-top: 50px;
     font-size: 3vh;
+    color: azure;
 }
 
 .container .bottom{
@@ -44,4 +47,27 @@
 }
 .container .bottom img{
     padding-top: 30px;
+    height: 300px;
+    width: 800px;
+}
+
+@media screen and (max-width: 768px) {
+    *{margin: 0; padding: 0;}
+    .container{height: 100vh; width: 100%; flex-direction: column-reverse; overflow-x: hidden;}
+    .container .bottom img{width: auto; justify-content: center;}
+    .container .top {flex-direction: column; height: auto; width: auto; }
+    .container .top .left {width: 100%; height: auto; padding: 20px;}
+    .container .top .right {width: 100%; height: auto; padding: 20px;}
+    
+}
+
+@media screen and (max-width: 480px) {
+    *{margin: 0; padding: 0;}
+    .container{height: 100vh; width: 100%; flex-direction: column-reverse; overflow-x: hidden;}
+    .container .bottom {display:flex; justify-content: center;}
+    .container .bottom img{width: auto; justify-content: center;padding: 0;}
+    .container .top {flex-direction: column; height: auto; width: auto; }
+    .container .top .left {width: 100%; height: auto; padding: 20px;}
+    .container .top .right {width: 100%; height: auto; padding: 20px;}
+    
 }
