@@ -7,7 +7,7 @@
 .container{
     display: flex;
     position: fixed;
-    background: linear-gradient(#c31432,#240b36);
+    background: linear-gradient(to right,#f0f2f0,#000c40);
     height: 100vh;
     width: 100vw;
 }
@@ -30,11 +30,21 @@
 .container .sponsor .main{
     font-size: 8vh;
     padding-top: 60px;
-    color: azure;
+    color: azure; 
 }
 
 .container .sponsor .s{
     padding-top: 40px;
     font-size: 4vh;
-    color: gray;
+    color: gold;
+}
+
+@media screen and (max-width: 768px) {
+    *{margin: 0; padding: 0;}
+    .container {height: 100vh; width: 100%; flex-direction: column; position: relative; background-image: url(../img/money.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;}
+    .container .sidepic {display: none;}
+    .container .sponsor { width: 100%; height: 100%;}
+    .container .sponsor .main {padding: 10px; color: black;}
+    .container .sponsor p{background-color: rgba(0,0,0,0.3);}
+    .container .sponsor .s { padding: 10px; color: gold; }
 }
